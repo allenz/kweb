@@ -54,7 +54,9 @@
     // select node
     KWEB.canvas.addEventListener('click', function onClick(e){
         var p = pos(e);
-		KWEB.activeNode = KWEB.findNode(p.x, p.y);
+		if (!rotating) {
+			KWEB.activeNode = KWEB.findNode(p.x, p.y);
+		}
 		if(KWEB.activeNode !== null) {
 			//KWEB.Tooltip.show(node);
 		}
