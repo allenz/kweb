@@ -62,7 +62,7 @@ KWEB.setClusters = function(clusters, numberPer, clusterProb, oProb) {
     }
 };
 
-KWEB.processData();
+//KWEB.processData();
 
 /*function setNodes() {
     for(var i = 0; i < 1000; i++){

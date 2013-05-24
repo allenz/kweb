@@ -116,7 +116,6 @@ KWEB.Isom = function() {
         }
         
         visited.list = visitedList;
-        console.log(visited)
 
         return visited;
     }
