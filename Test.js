@@ -7,7 +7,7 @@
 /*global KWEB:false*/
 
 KWEB.processData = function(json) {
-    /*var count = json.length;
+    var count = json.length;
     console.log(count);
     
     var lookup = {}; // MID -> Node
@@ -34,9 +34,9 @@ KWEB.processData = function(json) {
             MID = curr.MID;
         }
     }
-    console.log(MID + ": " + max);*/
+    console.log(MID + ": " + max);
 
-    KWEB.setClusters(5, 5, 0.8, 0.01);
+    //KWEB.setClusters(5, 5, 0.8, 0.01);
 
     KWEB.Isom();
 };
@@ -65,18 +65,17 @@ KWEB.setClusters = function(clusters, numberPer, clusterProb, oProb) {
 KWEB.processData();
 
 /*function setNodes() {
-        
-        for(var i = 0; i < 1000; i++){
-            var curr = KWEB.Node.random();
-            var currAdj = [];
-            for(var j = 0; j < i; j++){
-                if(Math.random() < 0.3){
-                    currAdj.push(KWEB.nodes[j]);
-                }
+    for(var i = 0; i < 1000; i++){
+        var curr = KWEB.Node.random();
+        var currAdj = [];
+        for(var j = 0; j < i; j++){
+            if(Math.random() < 0.3){
+                currAdj.push(KWEB.nodes[j]);
             }
-            curr.adjList = currAdj;
-            KWEB.nodes.push(curr);
         }
-        
-        KWEB.Isom();
-    }*/
+        curr.adjList = currAdj;
+        KWEB.nodes.push(curr);
+    }
+    
+    KWEB.Isom();
+}*/

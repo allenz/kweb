@@ -16,8 +16,8 @@ KWEB.Isom = function() {
     var r_init = 3,
         adapt_init = 0.8,
         c = 0.4,
-        t_max = 100,
-        delay = 0;
+        t_max = 100;
+        //delay = 0;
 
     var r, adaptation, t = 1;
 
@@ -65,7 +65,7 @@ KWEB.Isom = function() {
         t++;
         KWEB.invalidated = true;
         
-        if (t < t_max) setTimeout(run, delay);
+        if (t < t_max) run(); //setTimeout(run, delay);
     }
 
     /**
