@@ -2,7 +2,6 @@
  * EVENT HANDLING
  * This module sets up the main animation loop and handles mouse events (i.e.
  * select, rotate, tooltip). Requires reqAnim.
- * TODO momentum http://andrew-hoyer.com/experiments/clock/
  * 
  * Author: Allen
  * Date: 8/7/12

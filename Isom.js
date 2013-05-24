@@ -1,4 +1,6 @@
 /**
+ * Graph layout using Inverted Self-Organizing Maps (ISOM).
+ *
  * Author: Allen
  * Date: 8/7/12
  */

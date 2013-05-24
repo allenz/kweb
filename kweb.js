@@ -1,19 +1,19 @@
 /**
+ * Knowledge Web namespace. Provides a framework for loading nodes and
+ * reponding to user input.
+ * 
  * Author: Allen
  * Date: 8/7/12
  */
-//var URL = "https://www.googleapis.com/freebase/v1/text/m/";
-/**
- * Knowledge Web namespace. Provides a framework for loading nodes and
- * reponding to user input.
- */
+
 var KWEB = {
     /** @type {boolean} if the stage should be redraw in the next animation frame */
     invalidated: true,
 
     /** @type {Array.<KWEB.Node>} */
     nodes: [],
-    activeNode: null, //TODO what is this?
+    /** @type {KWEB.Node} */
+    activeNode: null,
     
     /**
     * Precondition: KWEB.Nodes is z-sorted
@@ -66,7 +66,7 @@ var KWEB = {
     RADIUS: 5 /** radius of each node */
 };
 
-// ~~~~~~~~~~~~~~~~~~~~ INIT CANVAS&CONTEXT ~~~~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~ INIT CANVAS ~~~~~~~~~~~~~~~~~~~~ //
 KWEB.canvas = document.getElementById('kweb');
 KWEB.ctx = KWEB.canvas.getContext('2d');
 KWEB.ctx.translate(KWEB.canvas.width / 2, KWEB.canvas.height / 2); // make the center (0,0)

@@ -1,14 +1,14 @@
 /**
+ * Represents a graph-theoretic node positioned in 3D space. Keeps track of
+ * identity, position, and adjacencies. Includes convenience spherical methods.
+ * Note that the z-coordinate points out of the page.
+ *
  * Author: Allen
  * Date: 8/7/12
  */
 /*global KWEB:false*/
 
 /**
- * Represents a graph-theoretic node positioned in 3D space. Keeps track of
- * identity, position, and adjacencies. Includes convenience spherical methods.
- * Note that the z-coordinate is interpreted as being out of the page.
- * 
  * @constructor
  * @param {number} x
  * @param {number} y

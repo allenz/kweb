@@ -1,3 +1,6 @@
+/**
+ * @author mrdoob
+ */
 var Stats = function () {
 
 	var startTime = Date.now(), prevTime = startTime;
