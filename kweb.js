@@ -35,7 +35,16 @@ var KWEB = {
        if(KWEB.activeNode) KWEB.activeNode.drawEdges();
 
        KWEB.invalidated = false;
-   },
+    },
+    
+    /**
+     * @returns 2D distance between points a and b.
+     */
+    dist: function(ax, ay, bx, by) {
+        var dx = ax - bx;
+        var dy = ay - by;
+        return Math.sqrt(dx * dx + dy * dy);
+    },
 
     /**
      * @param {number} x
@@ -45,15 +54,9 @@ var KWEB = {
     findNode: function(x, y) {
         "use strict";
 
-        function dist(ax, ay, bx, by) {
-            var dx = ax - bx;
-            var dy = ay - by;
-            return Math.sqrt(dx * dx + dy * dy);
-        }
-
         for(var i = 0; i < KWEB.nodes.length; i++) {
             var proj = KWEB.nodes[i].proj();
-            if(dist(x, y, proj.x, proj.y) <= proj.r) {
+            if(KWEB.dist(x, y, proj.x, proj.y) <= proj.r) {
                 return KWEB.nodes[i];
             }
         }
