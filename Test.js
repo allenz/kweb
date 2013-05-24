@@ -1,3 +1,9 @@
+/**
+ * Loads and processes KWEB nodes.
+ *
+ * @author Allen
+ */
+
 /*global KWEB:false*/
 
 KWEB.processData = function(json) {
